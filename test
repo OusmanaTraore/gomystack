@@ -1,0 +1,37 @@
+#!/bin/bash
+# source test_hosts
+# IP_ETH1="172.31.45.83"
+
+# if [  "${IP_ETH1}" ]; then
+#     echo "existe"
+#     sudo sed -i "s/^$IP_ETH1.*$//"  test_hosts 
+# else
+#     echo "not existe"
+#     sudo sed -i "s/^192.*$//"  test_hosts
+# fi
+# Numero_ligneCALICO_IPV4POOL_CIDR_Name=`awk ' {print NR "-" , $0 }' calico.yaml  | grep  CALICO_IPV4POOL_CIDR | cut -d "-" -f 1`
+# Numero_ligneCALICO_IPV4POOL_CIDR_Value=`awk ' {print NR "-" , $0 }' calico.yaml  | grep  192.168.0.0/16 | cut -d "-" -f 1`
+# # echo $Numero_ligneCALICO_IPV4POOL_CIDR_Name
+# # echo $Numero_ligneCALICO_IPV4POOL_CIDR_Value
+
+
+# # sed  -i "s/$VAR_CALICO_NAME_DIESE/$VAR_CALICO_NAME_WITHOUT_DIESE/" calico2.yaml
+
+# sed  -i "$Numero_ligneCALICO_IPV4POOL_CIDR_Name s/# //" calico2.yaml
+# sed  -i "$Numero_ligneCALICO_IPV4POOL_CIDR_Value s/# //" calico2.yaml
+
+
+# awk ' {print NR "-" , $0 }' calico2.yaml | grep '$Numero_ligneCALICO_IPV4POOL_CIDR_Name|$Numero_ligneCALICO_IPV4POOL_CIDR_Value'
+echo -e "Combien de noeuds seront ajoutés au cluster? 
+Tapez  0,1,2... correspondant au nombre de noeuds!"
+read -p "|> " node
+
+    for (( i=1; i<=$node; i++ ))
+    do
+        read -p " Entrez l'adresse IP du worker-$i puis tapez entrée: 
+        " worker
+        sed -i  "1a  $worker worker-$i " test_hosts 
+
+    done
+
+
