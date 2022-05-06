@@ -7,11 +7,12 @@ reset_and_remove(){
      sudo apt purge kubeadm kubelet kubectl -y
      sudo apt autoremove
      sudo rm -R $HOME/.kube
-    if [  "${IP_ETH1}" ] then   
-           sudo sed -i "s/^$IP_ETH1.*$//"  /etc/hosts 
-    else
-        sudo sed -i "s/^192.*$//"  /etc/hosts 
-    fi
+     if [  "${IP_ETH1}" ] 
+     then
+	     sudo sed -i "s/^$IP_ETH1.*$//"  /etc/hosts
+     else
+	     sudo sed -i "s/^192.*$//"  /etc/hosts
+     fi
     
      }
 
@@ -78,7 +79,7 @@ apt-mark hold kubelet kubeadm kubectl
 ### TELECHARGEMENT du plugin  Calico pour les Network Policies
 echo " TELECHARGEMENT du plugin Calico pour les Network Policies > "
 wget https://docs.projectcalico.org/manifests/calico.yaml
-curl https://projectcalico.docs.tigera.io/manifests/calico.yaml -O
+#curl https://projectcalico.docs.tigera.io/manifests/calico.yaml -O
 
 ### Edition du  fichier de configuration calico.yml
 echo -e "
@@ -154,20 +155,22 @@ EOF
 
 cat kubeadm-config.yaml
 
-### Initialisation de kubeadm
-echo " Initialisation de kubeadm et sauvegarde dans kubeadm-init.out> "
-kubeadm init --config=kubeadm-config.yaml --upload-certs | tee kubeadm-init.out 
-
 
 sleep 2
 
 echo -e "
 |> Installation de firewalld
 "
-apt install firewalld
+sudo apt install firewalld
+if [ $? == 0 ]
+then
+	firewall-cmd --add-port=179/tcp --permanent
+	firewall-cmd --reload
+fi
 
-firewall-cmd --add-port=179/tcp --permanent
-firewall-cmd --reload
+### Initialisation de kubeadm
+echo " Initialisation de kubeadm et sauvegarde dans kubeadm-init.out> "
+kubeadm init --config=kubeadm-config.yaml --upload-certs | tee kubeadm-init.out 
 
 echo -e "
 =================================================================================
