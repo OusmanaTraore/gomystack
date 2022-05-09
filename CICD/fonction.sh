@@ -78,8 +78,8 @@ git_push(){
 	 git_acp 
 	 ;;
  	*) 
-         echo "Dizaine non atteint, pas de push"
-         ;;
+         continue
+	;;
    esac
 }
 ### <========================== FONCTION GIT-PUSH   FIN               =========================>

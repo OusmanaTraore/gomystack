@@ -3,15 +3,22 @@ source compteur.sh
 source fonction.sh
 
 
-# compteur_question=0
-# compteur_reponse=0
+ compteur_question=0
+ compteur_reponse=0
+#DIRECTORY="KUBERNETES"
 
-
+ 
+choose_directory
+directory_compteur=`grep compteur_question_total $DIRECTORY/compteur.sh | cut -d "=" -f 2`
 echo -e "
             ==========================================================
-            <<|>>>   NOMBRE DE QUESTIONS JUSQU'A PRESENT = $compteur_question_total  <<<|>>
+            <<|>>>   NOMBRE DE QUESTIONS JUSQU'A PRESENT
+	    dossier=$DIRECTORY , QUESTION(S)-REPONSE(S)=$directory_compteur  <<<|>>
             ==========================================================
 "
+# read -p "
+# ENTREZ LE REPERTOIRE DE DESTINATION:
+# |> " DIRECTORY
 
 while true
 do
@@ -36,8 +43,8 @@ do
          exit;
          ;;
          q|Q|s|S)
-         choose_directory
-        if [ $compteur_question_total -gt $compteur_question ] &&  [ $compteur_question_total -gt $compteur_reponse ] ; 
+         #choose_directory
+        if [ $compteur_question_total -gt $compteur_question ] &&  [ $compteur_question_total -gt $compteur_reponse ] 
         then
             compteur_question=$compteur_question_total
             compteur_reponse=$compteur_question_total
@@ -49,7 +56,7 @@ do
             ((compteur_question ++ ))
             ((compteur_reponse ++ ))
         sed -i -r "s/^(compteur_question_total=).[0-9]*$/\1$compteur_question/" $DIRECTORY/compteur.sh
-        echo -e " compteur actuel: $compteur_question_total"
+	echo -e " compteur actuel: $directory_compteur"
         QUESTIONS="|> QUESTION N-$compteur_question"
         REPONSES="|> REPONSE  N-$compteur_reponse"
         quest_resp
@@ -60,5 +67,3 @@ do
    esac
 
 done
-
-
