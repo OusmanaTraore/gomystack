@@ -1,4 +1,26 @@
 {
+  "name": "SAVOIR-FAIRE"
+},
+{
+  "name": "COMPÉTENCES TECHNIQUES "
+},
+{
+  "name": "LANGUES"
+},
+{
+  "name": "EXPÉRIENCES PROFESSIONNELLES"
+}
+"FORMATIONS" : [
+  {
+    "Févr 2022 - Avr 2022": "Expert Kubernetes (ORSYS)",
+    "Juin 2021 – Déc 2021 ": "Administrateur Systèmes, Réseaux et Sécurité Niveau II, RNCP (Équivalent bac+4) – IPREC, PARIS",
+    "Déc 2020 – Mars 2021" : "Concepteur et Développeur d’Applications Mobiles (Global knowledge, Rueil-Malmaison)",
+    "Déc 2019 – Mars 2020" : "Ingénieur DevOps (GTM Ingénierie, Paris 12)",
+    "2013 – 2016"  : "Master II Physique et Sciences des Matériaux (Institut Galilée, Villetaneuse – ERASMUS (Espagne)",
+    "2010 - 2012" : "Master II Physique de la Matière et des Rayonnements (Université Abdel-Maleck Essaadi – Maroc)"
+  }
+]
+{
 
   "SAVOIR-FAIRE" : [
     {

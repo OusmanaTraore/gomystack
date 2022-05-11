@@ -48,4 +48,14 @@ export class CustomerPage implements OnInit {
 
    }
 
+  doRefresh(event) {
+    this.getUsers();
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
+
   }
