@@ -1,0 +1,280 @@
+{
+
+  "SAVOIR-FAIRE" : [
+    {
+      "Compétences fonctionnelles" : [
+        "Monitoring d’infrastructure IT",
+        "Mise en place d’une architecture de réseau",
+        "Méthode Agile,Conception",
+        "Administration de Systèmes et de Réseaux",
+        "Gestion des déploiements"
+      ],
+      "Secteurs d'intervention": [
+        "Système",
+        "Réseau",
+        "Serveur",
+        "Front-end",
+        "Back-end",
+        "Virtualisation",
+        "Cloud computing"
+      ]
+    }
+  ]
+},
+{
+  "COMPÉTENCES TECHNIQUES " : [
+    {
+      "OUTILS" : [
+        "Git",
+        "Github",
+        "Gitlab",
+        "Kubernetes",
+        "Openshift II",
+        "Docker",
+        "Grafana",
+        "Rancher",
+        "Docker",
+        "Vagrant",
+      "Terraform",
+      "VmWare",
+      "Ansible",
+      "Jenkins",
+      "MS Exchange" ,
+      "Active Directory",
+      "Office 365",
+      "Zabbix",
+      "Cisco",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB"
+    ]
+  }
+]
+},
+{
+    "LANGAGES" : [
+      "Bash",
+      "Python",
+      "PowerShell",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Angular",
+      "NodeJs",
+      "TypeScript"
+    ]
+},
+{
+    "SYSTÈMES/SERVEUR " : [
+      "Linux" ,
+      "Windows",
+      "Windows Server 2012-219",
+      "Azure",
+      "AWS"
+    ]
+ },
+ {
+   "SÉCURITÉ / RÉSEAUX " : [
+     "TCP-IP",
+     "LAN",
+     "WAN",
+     "Switch",
+     "Routeurs" ,
+     "DNS",
+     "DHCP" ,
+     "RGPD"
+    ]
+  },
+  {
+    "METHODES " : [
+      "ITIL v4",
+      "Agile"
+    ]
+  },
+  {
+
+    "LANGUES" : [
+      {
+        "LU " : [
+          "Espagnol (5/5)",
+          "Anglais (5/5)",
+          "Arabe (4/5)",
+          "Japonais (2/5)"
+        ]
+      },
+      {
+
+        "ECRIT " : [
+          "Espagnol (4/5)",
+          "Anglais (4/5)",
+          "Arabe (3/5)",
+          "Japonais (1/5)"
+        ]
+      },
+      {
+        "PARLÉ" : [
+          "Espagnol (4/5)",
+          "Anglais (3/5)",
+          "Arabe (3/5)",
+          "Japonais (1/5)"
+        ]
+      }
+]
+},
+{
+"EXPÉRIENCES PROFESSIONNELLES" : [
+  {
+    "ORSYS - La Défense " : [
+      {
+        "Date" : "Février/2022 à Avril/2022",
+        " Projet" : [
+          {
+            "Expert Kubernetes":[
+              "Installation K8S",
+              "AWS EKS",
+              "Déploiement de microservices",
+              "CI/CD avec ArgoCD",
+              "Monitoring avec Prometheus/Grafana",
+              "Security Benchmark K8S"
+            ]
+          }
+        ]
+      }
+    ]
+    }
+  ]
+},
+{
+  "AFAPARK – Bouffémont"  : [
+    {
+      "Date" : "Novembre/2021 à Décembre/2022",
+      " Projet" : [
+        {
+          "Monitoring de parc automobile":[
+            {
+              "Recherche de solutions pour assurer la surveillance de parc automobile (Zabbix v5)": [
+                "Installation K8S",
+                "AWS EKS",
+                "Déploiement de microservices",
+                "CI/CD avec ArgoCD",
+                "Monitoring avec Prometheus/Grafana",
+                "Security Benchmark K8S"
+              ],
+              "Environnement": [
+                "Système",
+                "Réseau",
+                "Serveur"
+              ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+
+    " GLOBAL KNOWLEDGE – Rueil-Malmaison"  : [
+      {
+        "Date" : "Mars/2021 à Mars/2021",
+        " Projet" : [
+          {
+            "Développement d’une application mobile (bancaire)":[
+              {
+                "Développement de l’interface des comptes utilisateurs (front-end + back-end)": [
+                  "Création d’interfaces avec (JAVA, XML)",
+                  "Ajouts, suppressions, modifications, mises à jour de comptes utilisateurs (operation CRUD)",
+                  "Utilisation de web services (Retrofit2) pour la partie back-end"
+                ],
+                "Environnement": [
+                  "Java",
+                  "Android",
+                  "Angular",
+                  "MongoDB"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+
+    "GT'M ingénierie – Villa Lourcine "  : [
+      {
+        "Date" : "Mars/2020 à Mars/2020",
+        " Projet" : [
+          {
+            "Mise en place d’un process CI/CD ":[
+              {
+                "Réalisation d’une pipeline CI/CD": [
+                   "Création de machines virtuelles (Infrastructure as code)",
+                   "Gestion des versions",
+                   "Gestion des containers",
+                   "Réalisation de déploiements continus"
+                ],
+                "Environnement": [
+                  "Git",
+                  "Github",
+                  "Vagrant",
+                  "Terraform",
+                  "Jenkins",
+                  "Docker"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+
+    "Académie de Versailles – Anthony"  : [
+      {
+        "Date" : "Décembre/2018 à Mai/2019",
+        " Projet" : [
+          {
+            "Enseignement  ":[
+              {
+                " Enseignement de la filière Physique-Chimie (niveau Collège)": [
+                  "Planification des cours",
+                  "Organisation et suivi du travail des élèves"
+                ],
+                "Environnement": [
+                  "Physique",
+                  "Chimie"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+
+    "Académie de Versailles – Courbevoie "  : [
+      {
+        "Date" : "Février/2018 à Mai/2018",
+        " Projet" : [
+          {
+            "Enseignement  ":[
+              {
+                " Enseignement de la filière Physique-Chimie (niveau Collège)": [
+                  "Planification des cours",
+                  "Organisation et suivi du travail des élèves"
+                ],
+                "Environnement": [
+                  "Physique",
+                  "Chimie"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

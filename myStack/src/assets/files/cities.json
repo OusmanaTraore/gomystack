@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "name": "Araffat",
+      "image":"ARAFAT.png"
+    },
+    {
+      "name": "Dar Naim",
+      "image":"DARNAIM.png"
+    },
+    {
+      "name": "El Mina",
+      "image": "ELMINA.png"
+    },
+    {
+      "name": "Ksar",
+      "image":"KSAR.png"
+    },
+    {
+      "name": "Sebkha",
+      "image": "SEBKHA.png"
+    },
+    {
+      "name": "Riyadh",
+      "image":"RYADH.png"
+    },
+
+    {
+      "name": "Tevragh Zeïna",
+      "image":"TEVRAGHZEINA.png"
+    },
+    {
+      "name": "Teyareth",
+      "image":"TEYARET.png"
+    },
+    {
+      "name": "Toujounine",
+      "image": "TOUJOUNINE.png"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
