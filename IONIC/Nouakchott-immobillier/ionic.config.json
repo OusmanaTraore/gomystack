@@ -1,0 +1,7 @@
+{
+  "name": "Nouakchott-immobillier",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{item?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-item >
+    <ion-label>
+      {{item?.name}}
+      <p>{{item?.description}}</p>
+    </ion-label>
+    <ion-note slot="end"> ${{item?.price}}</ion-note>
+  </ion-item> -->
+  <app-product [item]="item"></app-product>
+</ion-content>

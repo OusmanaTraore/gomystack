@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>single-item : id= {{id}}</ion-title>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/tabs" ></ion-back-button>
+
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="navCtrl.back()"> Go back </ion-button>
+  <ion-button (click)="navCtrl.navigateRoot('/tabs')"> Navigate to root</ion-button>
+  <ion-button (click)="navCtrl.pop()"> Pop</ion-button>
+  <ion-button (click)="navCtrl.navigateBack('/tabs')">Navigate Back </ion-button>
+  <ion-button (click)="router.navigateByUrl('/tabs')">NavigateByUrl </ion-button>
+
+</ion-content>
