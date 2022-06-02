@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: webapp-sql
+    tier: frontend
+  name: webapp-sql
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: webapp-sql
+    tier: frontend
+  type: NodePort
+status:
+  loadBalancer: {}

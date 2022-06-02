@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webapp-sql
+    tier: frontend
+  name: webapp1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp-sql
+      tier: frontend
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: webapp-sql
+        tier: frontend
+    spec:
+      containers:
+      - image: hshar/webapp
+        name: webapp1
+        ports:
+        - containerPort: 8093
+        resources: {}
+status: {}

@@ -40,3 +40,11 @@
     3. Delete deployment
     kubectl -n <namespace-name> delete deployment <deployment-name> 
 
+# Services
+    1. NodePort
+    kubectl create service nodeport webapp-sql --tcp=80  $do > webservices
+    
+    2. ClusterIP
+    kubectl create  service clusterip  webapp-sql1 --tcp=3306 --clusterip="None" $do > webservices-sql
+
+    3.
