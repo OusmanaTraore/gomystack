@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Araffat",
+      "image":"ARAFAT.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 2,
+      "name": "Dar Naim",
+      "image":"DARNAIM.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 3,
+      "name": "El Mina",
+      "image": "ELMINA.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 4,
+      "name": "Ksar",
+      "image":"KSAR.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 5,
+      "name": "Sebkha",
+      "image": "SEBKHA.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 6,
+      "name": "Riyadh",
+      "image":"RYADH.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+
+    {
+      "id": 7,
+      "name": "Tevragh Zeïna",
+      "image":"TEVRAGHZEINA.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 8,
+      "name": "Teyareth",
+      "image":"TEYARET.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    },
+    {
+      "id": 9,
+      "name": "Toujounine",
+      "image": "TOUJOUNINE.png",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error nostrum quo enim in ea dicta omnis ipsa tenetur cumque."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+

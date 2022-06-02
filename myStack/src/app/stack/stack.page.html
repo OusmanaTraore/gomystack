@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Stack</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col  sizeLg="6" sizeMd="6" sizeXs="12" *ngFor="let stack of stacks">
+      <ion-card>
+       <!-- <img  class="stack_image_size" src="assets/images/NOUAKCHOTT/{{stack.image}}"/> -->
+        <div class="card-title">{{stack.title}}
+          <li *ngFor='let name of names'>
+            {{stack.context.name.name}}
+            <!-- {{stack.context.date[i]}} -->
+          </li>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+ </ion-content>

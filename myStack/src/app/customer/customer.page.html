@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Customer</ion-title>
+    <ion-toolbar color="mycolor">
+      <ion-searchbar placeholder="Rechercher" animated (ionChange)="serachCustomer($event)"></ion-searchbar>
+    </ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content>
+        refreshingSpinner="bubbles"
+      </ion-refresher-content>
+    </ion-refresher>
+
+  <ion-list *ngIf="permission">
+    <ion-item *ngFor="let user of   searchedUser">
+      <ion-avatar slot="start">
+        <img src="assets/images/{{user.image}}"/>
+      </ion-avatar>
+      <ion-avatar slot="end">
+        <ion-icon name="search"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2 class="colorBlue"> {{user.name}}</h2>
+        <h3>{{user.state}}</h3>
+        <p>{{user.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item *ngIf="!permission">
+    <ion-label>
+      <p>FALTA DE PERMISIONES</p>
+      <h2>No tienes permision par ver los datos de los clientes</h2>
+    </ion-label>
+  </ion-item>
+</ion-content>
