@@ -37,7 +37,11 @@
 
     kubectl -n <namespace-name> create deployment webapp1 --image=hshar/webapp1 --port=8081 $do > webapp-deployment
 
-    3. Delete deployment
+    3. Change image of deployment
+
+    k -n webapp set image deployment/mynginx nginx=nginx:1.9.1
+
+    4. Delete deployment
     kubectl -n <namespace-name> delete deployment <deployment-name> 
 
 # Services
@@ -48,3 +52,7 @@
     kubectl create  service clusterip  webapp-sql1 --tcp=3306 --clusterip="None" $do > webservices-sql
 
     3.
+
+    616.41 02/05/2022
+    685,10 06/04/2022
+    538,12 14/03/2022

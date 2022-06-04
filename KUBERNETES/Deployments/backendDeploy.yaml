@@ -2,25 +2,25 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: web-mysql
+    app: mysql
     tier: backend
-  name: mysql
+  name: mysql-db
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web-mysql
+      app: mysql
       tier: backend
   strategy: {}
   template:
     metadata:
       labels:
-        app: web-mysql
+        app: mysql
         tier: backend
     spec:
       containers:
       - image: hshar/mysql:5.5
-        name: mysql
+        name: mysql-db
         ports:
         - containerPort: 3306
         resources: {}
