@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mynginx-testdocker
+  name: mynginx-testdocker
+  namespace: testdocker
+spec:
+  containers:
+  - image: nginx
+    name: mynginx-testdocker
+    resources: {}
+    env:
+    - name: SECRET_USERNAME
+      valueFrom:
+              secretKeyRef:
+                      key: username
+                      name: docker-secret
+    - name: SECRET_PASSWORD
+      valueFrom:
+              secretKeyRef:
+                      key: password
+                      name: docker-secret
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

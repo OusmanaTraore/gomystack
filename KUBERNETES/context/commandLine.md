@@ -44,6 +44,9 @@
     4. Delete deployment
     kubectl -n <namespace-name> delete deployment <deployment-name> 
 
+    5. Exposing a deployement
+    k -n ingress-nginx  expose deployment mynginx --type=NodePort --port=8080
+
 # Services
     1. NodePort
     kubectl create service nodeport webapp-sql --tcp=80  $do > webservices
@@ -51,8 +54,6 @@
     2. ClusterIP
     kubectl create  service clusterip  webapp-sql1 --tcp=3306 --clusterip="None" $do > webservices-sql
 
-    3.
+    3. Ingress
+    kubectl create ingress myingress --rule="my-first-ingress.com/web=myIngressService:8080"
 
-    616.41 02/05/2022
-    685,10 06/04/2022
-    538,12 14/03/2022
