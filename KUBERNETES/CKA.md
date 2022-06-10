@@ -49,32 +49,4 @@
        # cat /tmp/date.txt
        # exit
     
-
-
-- [x] Create a secret with your docker username and your docker password from file
-        kubectl create secret generic docker-secret \
-        --from-file=username=./secretDocker.txt \
-        --from-file=password=./secretDocker.txt
-
-      Verify the secret 
-        kubectl get secrets
-        kubectl describe secrets/docker-secret
-
-     Decoding the secret
-        kubectl get secret docker-secret -o jsonpath='{.data}'
-        kubectl get secret docker-secret -o jsonpath='{.data.username}, {.data.pasword}' | base64 --decode
-
-- [x] Create a secret with your docker username and your docker password from literal
-        kubectl  -n testdocker create secret generic docker-secret \
-        --from-literal=username=./secretDocker.txt \
-        --from-literal=password=./secretDocker.txt
-
-- [x] Create a deployment redis with image redis and expose it's port on 6379
- Get the dns record  for the service and pods for the deployment redis
-  and put the value in the below files
-  /tmp/dns-record-pod & /tmp/dnsrecords-svc
-
-  kubectl create deployment redis --image=redis 
-  kubectl expose deployment redis --port=6379 --targetPort=6379 
-
-
+    

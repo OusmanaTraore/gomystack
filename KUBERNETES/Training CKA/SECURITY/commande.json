@@ -1,0 +1,69 @@
+{
+    "Security": [
+
+        {
+
+            "Certificate details" :[
+                {
+                    "id":1,
+                    "question":"find the kubeapiserver key",
+                    "command": "find /etc | grep apiserver",
+                    "reponse": "/etc/kubernetes/pki/apiserver.key"
+                },
+                {
+                    "id":2,
+                    "question":"Identify the Certificate file used to authenticate kube-apiserver as a client to ETCD Server",
+                    "command": "find /etc | grep apiserver",
+                    "reponse": "/etc/kubernetes/pki/apiserver-etcd-client.crt"
+                },
+                {
+                    "id":3,
+                    "question":"Identify the key used to authenticate kubeapi-server to the kubelet server",
+                    "command": "find /etc | grep apiserver",
+                    "reponse": "/etc/kubernetes/pki/apiserver-kubelet-client.key"
+                },
+                {
+                    "id":4,
+                    "question":"Identify the ETCD Server Certificate used to host ETCD server",
+                    "command": "find /etc | grep server.crt",
+                    "reponse": "/etc/kubernetes/pki/etcd/server.crt"
+                },
+                {
+                    "id":5,
+                    "question":"Identify the ETCD Server CA Root Certificate used to serve ETCD Server",
+                    "command": "find /etc | grep ca.crt",
+                    "reponse": "/etc/kubernetes/pki/etcd/ca.crt"
+                },
+                {
+                    "id":6,
+                    "question":"What is the Common Name (CN) configured on the Kube API Server Certificate?",
+                    "command": " openssl x509 -in /etc/kubernetes/pki/apiserver.crt  -text -noout | grep CN ",
+                    "reponse": "CN = kube-apiserver"
+                },
+                {
+                    "id":7,
+                    "question":"Which of the below alternate names is not configured on the Kube API Server Certificate?",
+                    "command": " openssl x509 -in /etc/kubernetes/pki/apiserver.crt  -text -noout | grep -i dns ",
+                    "reponse": "CN = kube-apiserver"
+                },
+                {
+                    "id":8,
+                    "question":"How long, from the issued date, is the Kube-API Server Certificate valid for?",
+                    "command": " openssl x509 -in /etc/kubernetes/pki/apiserver.crt  -text -noout | grep -i validity -A 2 ",
+                    "reponse": ["Validity","Not Before: Jun 10 14:30:27 2022 GMT","Not After : Jun 10 14:30:27 2023 GMT "]
+                }
+            ],
+            "Certificate API" :[
+                {
+                    "id":1,
+                    "question":"Create a CertificateSigningRequest object with the name bob with the contents of the bob.csr file",
+                    "command": "find /etc | grep apiserver",
+                    "reponse": "/etc/kubernetes/pki/apiserver.key"
+                }
+            ]
+
+        }   
+    
+    ]
+    
+}
